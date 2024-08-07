@@ -37,11 +37,74 @@
 /*======================================
 //--//-->   ABOUT
 ======================================*/
+#resm{
+  position: relative;
+  background-color:  #ffbd39;
+  border-radius: 4em;
+  font-size: 16px;
+  color: black;
+  padding: 0.8em 1.8em;
+  cursor:pointer;
+  user-select:none;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+#resm:hover {
+  transition-duration: 0.1s;
+  background-color:#ec9e01;
+}
+
+#resm:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+#resm:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+#resm:active {
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
 
 .about-mf .about-img {
   margin-bottom: 2rem;
@@ -115,6 +178,7 @@
 
 .zoom-effect:hover {
   transform: scale(1.1);
+  color: yellowgreen;
 }
 
 
@@ -510,7 +574,7 @@
 				<li> Have good communication and quick learning skills. Like to continually learn and develop my career.</li></p>
 			<div class="row justify-content-center mt-5">
 				<div class="col-md-6 text-center ftco-animate">
-					<p><a href="https://docs.google.com/document/d/1uUnQ-SEAbEfaEDZGFdI_syCco_l7R2va/edit?usp=drive_link&ouid=102323809572227722531&rtpof=true&sd=true" class="btn btn-primary py-3 px-5">Download Resume</a></p>
+					<p><a href="https://docs.google.com/document/d/1uUnQ-SEAbEfaEDZGFdI_syCco_l7R2va/edit?usp=drive_link&ouid=102323809572227722531&rtpof=true&sd=true" class="btn-primary py-3 px-5  " id ="resm">Download Resume</a></p>
 				</div>
 			</div>  
 		</div>
@@ -559,7 +623,7 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-          		<h3 class="mb-4">Download Resume</h3>
+          		<h3 class="mb-4 ftco-animate">Download Resumee</h3>
 	            <p><a href="#">resumelink</a></p>
 	          </div>
           </div>
